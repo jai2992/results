@@ -84,14 +84,14 @@ def calculate_sgpa(subject_grades, subject_credits):
                 {
                     "type": "text",
                     "text": (
-                        ```
+                        '''
                         First multiply the credit point of each subject to the grade point you have earned in the subject. Then, add all the total grade points you have got. Now, divide this sum by the total sum of credit points of the semester. You will get your SGPA.
 O - 10
 A+ - 9
 A - 8
 B+ - 7
 B - 6
-                        ```
+                        '''
                     )
                 }
             ]
