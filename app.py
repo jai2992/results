@@ -92,6 +92,8 @@ A - 8
 B+ - 7
 B - 6
                         '''
+                        f"**Subjects & Grades:**\n{subject_grades}\n\n"
+                        f"**Subjects & Credits:**\n{subject_credits}\n\n"
                     )
                 }
             ]
