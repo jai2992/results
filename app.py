@@ -42,7 +42,6 @@ def extract_subjects_and_grades(image_base64):
     completion = client.chat.completions.create(
         model="meta-llama/Llama-3.2-90B-Vision-Instruct", 
         messages=messages, 
-        max_tokens=200,
     )
     
     return completion.choices[0].message['content']
@@ -71,8 +70,7 @@ def extract_subjects_and_credits(image_base64):
     
     completion = client.chat.completions.create(
         model="meta-llama/Llama-3.2-90B-Vision-Instruct", 
-        messages=messages, 
-        max_tokens=200,
+        messages=messages
     )
     
     return completion.choices[0].message['content']
@@ -109,8 +107,7 @@ def calculate_sgpa(subject_grades, subject_credits):
     
     completion = client.chat.completions.create(
         model="meta-llama/Llama-3.2-90B-Vision-Instruct", 
-        messages=messages, 
-        max_tokens=300,
+        messages=messages
     )
     
     return completion.choices[0].message['content']
